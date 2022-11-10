@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>POST</title>
+</head>
+<body>
+<h1>POST</h1>
+<h2>{{a}} + {{b}} = {{result}}</h2>
+<form method="post">
+    {% csrf_token %}
+    A<input type="number" value="{{a}}" name="a">
+    <br>
+    B<input type="number" value="{{b}}" name="b">
+    <br>
+    <input type="submit" value="Add">
+    <br>
+</form>
+</body>
+</html>

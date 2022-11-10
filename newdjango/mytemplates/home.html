@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style>
+        a{
+        font-size:larger;
+
+        }
+    </style>
+</head>
+<body>
+<h1>Links</h1>
+<center>
+<table border="2">
+    <tr><th>Name</th><th>Link</th></tr>
+    <tr><th>Name</th><th>{% url 'admin:index' %}</th></tr>
+    {% for link in links %}
+    <tr><td title="Visit {{link}}">{{link}}</td><td><a target="new page" title="Visit {{link}}" href="{% url link %}">{{link}}</a></td></tr>
+    {% endfor %}
+
+</table>
+    </center>
+</body>
+</html>

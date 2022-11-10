@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loop</title>
+</head>
+<body>
+
+{%if Y is None %}
+{{"None"}}
+{%else%)
+{{Y}}
+{%endif%}
+
+<table border = "2">
+    <tr><th>Value</th></tr>
+    {%for value in X %}
+    <tr><td>{{value}}</td></tr>
+    {%end for %}
+
+</table>
+</body>
+</html>

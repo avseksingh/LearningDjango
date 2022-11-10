@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+</head>
+<body>
+<h1>Table of </h1>
+<form method = "get">
+    Input Number<input  name="n" type = "number" value = "{{n}}">
+    <br>
+    <input type = "submit"  value="submit">
+    <table>
+        <tr><h1> Table of {{n}}</h1></tr>
+        {% for i in table %}
+        <tr><td>{{i}}</td></tr>
+        {% endfor %}
+    </table>
+
+</form>
+</body>
+</html>
